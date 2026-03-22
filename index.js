@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 const CALENDAR_ID = process.env.CALENDAR_ID;
-const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS);
+const credentials = JSON.parse(process.env.google_credentials);
 
 const auth = new google.auth.GoogleAuth({
   credentials,
